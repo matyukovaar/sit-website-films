@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Самые лучшие фильмы. Страница с таблицей</title>
+</head>
+
+<body>
+  <h1>Самые лучшие фильмы</h1>
+  <h2>Страница с таблицей</h2>
+
+  <div>
+    <a href="index.html">Главная страницы <br></a>
+    <a href="table.html">Страница с таблицей</a>
+  </div>
+
+  <hr width="100%">
+  <h3></h3>
+  <details>
+    <summary>График</summary>
+
+    <form>
+
+      <h4>Значение по оси OX</h4>
+      <p>
+        <input type="radio" name="type"> Жанр
+        <br>
+
+        <input type="radio" name="country"> Страна
+        <br>
+
+        <input type="radio" name="year"> Год
+      </p>
+
+      <h4>Значение по оси OY</h4>
+      <p>
+        <input type="checkbox" name="max_rating">Максимальный рейтинг
+        <br>
+
+        <input type="checkbox" name="min_rating">Минимальный рейтинг
+        <br>
+
+        <input type="checkbox" name="film_count">Количество фильмов
+      </p>
+
+      <p>
+        <input type="submit" value="Построить">
+      </p>
+
+    </form>
+
+    <p>Здесь будет график</p>
+  </details>
+
+  <details>
+    <summary>Фильтр</summary>
+
+    <form>
+
+      <p>
+        <label for="filter_name">Название:</label>
+        <input type="text" id="filter_name">
+      </p>
+
+      <p>
+        <label for="filter_type">Жанр:</label>
+        <input type="text" id="filter_type">
+      </p>
+
+      <p>
+        <label for="filter_country">Страна:</label>
+        <input type="text" id="filter_country">
+      </p>
+
+      <p>
+        <label for="filter_city">Город:</label>
+        <input type="text" id="filter_city">
+      </p>
+
+      <p>
+        Год: от
+        <input type="number" name="year_from" min="1900" max="2026"> до
+        <input type="number" name="year_to" min="1900" max="2026">
+      </p>
+
+      <p>
+        Рейтинг: от
+        <input type="number" name="rating_from"> до
+        <input type="number" name="rating_to">
+      </p>
+
+      <p>
+        <input type="submit" value="Найти">
+      </p>
+
+    </form>
+  </details>
+  <details>
+    <summary>Сортировка</summary>
+
+    <form>
+
+      <p>
+        Первый уровень:
+        <select name="sort_1">
+          <option value="none">Нет</option>
+          <option value="name">Название</option>
+          <option value="type">Жанр</option>
+          <option value="country">Страна</option>
+          <option value="city">Город</option>
+          <option value="year">Год</option>
+          <option value="rating">Рейтинг</option>
+        </select>
+        по убыванию?
+        <input type="checkbox" name="sort_1_desc" value="yes">
+      </p>
+
+      <p>
+        Второй уровень:
+        <select name="sort_2">
+          <option value="none">Нет</option>
+          <option value="name">Название</option>
+          <option value="type">Жанр</option>
+          <option value="country">Страна</option>
+          <option value="city">Город</option>
+          <option value="year">Год</option>
+          <option value="rating">Рейтинг</option>
+        </select>
+        по убыванию?
+        <input type="checkbox" name="sort_2_desc" value="yes">
+      </p>
+
+      <p>
+        Третий уровень:
+        <select name="sort_3">
+          <option value="none">Нет</option>
+          <option value="name">Название</option>
+          <option value="type">Жанр</option>
+          <option value="country">Страна</option>
+          <option value="city">Город</option>
+          <option value="year">Год</option>
+          <option value="rating">Рейтинг</option>
+        </select>
+        по убыванию?
+        <input type="checkbox" name="sort_3_desc" value="yes">
+      </p>
+
+      <p>
+        <input type="submit" value="Сортировать">
+      </p>
+
+    </form>
+  </details>
+
+  <h3>Таблица</h3>
+
+  <table border="1" cellpadding="10" cellspacing="0" width="100%" align="center">
+
+    <thead>
+      <tr bgcolor="grey">
+        <th align="center">Название фильма</th>
+        <th align="center">Год</th>
+        <th align="center">Страна</th>
+        <th align="center">Режиссёр</th>
+        <th align="center">Жанр</th>
+        <th align="center">Рейтинг</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Побег из Шоушенка</td>
+        <td align="center">1994</td>
+        <td>США</td>
+        <td>Фрэнк Дарабонт</td>
+        <td>Драма</td>
+        <td align="center">9.0</td>
+      </tr>
+
+      <tr>
+        <td>Крёстный отец</td>
+        <td align="center">1972</td>
+        <td>США</td>
+        <td>Фрэнсис Форд Коппола</td>
+        <td>Драма</td>
+        <td align="center">8.9</td>
+      </tr>
+
+      <tr>
+        <td>Тёмный рыцарь</td>
+        <td align="center">2008</td>
+        <td>США</td>
+        <td>Кристофер Нолан</td>
+        <td>Боевик</td>
+        <td align="center">8.8</td>
+      </tr>
+
+      <tr>
+        <td>Крёстный отец 2</td>
+        <td align="center">1974</td>
+        <td>США</td>
+        <td>Фрэнсис Форд Коппола</td>
+        <td>Драма</td>
+        <td align="center">7.9</td>
+      </tr>
+
+      <tr>
+        <td>12 разгневанных мужчин</td>
+        <td align="center">1957</td>
+        <td>США</td>
+        <td>Сидни Люмет</td>
+        <td>Детектив</td>
+        <td align="center">8.2</td>
+      </tr>
+
+      <tr>
+        <td>Властелин колец: Возвращение короля</td>
+        <td align="center">2003</td>
+        <td>Новая Зеландия</td>
+        <td>Питер Джексон</td>
+        <td>Фэнтези</td>
+        <td align="center">9.3</td>
+      </tr>
+
+      <tr>
+        <td>Список Шиндлера</td>
+        <td align="center">1993</td>
+        <td>США</td>
+        <td>Стивен Спилберг</td>
+        <td>Драма</td>
+        <td align="center">9.0</td>
+      </tr>
+
+      <tr>
+        <td>Властелин колец: Братство Кольца</td>
+        <td align="center">2001</td>
+        <td>Новая Зеландия</td>
+        <td>КПитер Джексон</td>
+        <td>Фэнтези</td>
+        <td align="center">8.8</td>
+      </tr>
+
+      <tr>
+        <td>Криминальное чтиво</td>
+        <td align="center">1994</td>
+        <td>США</td>
+        <td>Квентин Тарантино</td>
+        <td>Детектив</td>
+        <td align="center">8.7</td>
+      </tr>
+
+      <tr>
+        <td>Хороший, плохой, злой</td>
+        <td align="center">1996</td>
+        <td>Италия</td>
+        <td>Серджо Леоне</td>
+        <td>Вестерн</td>
+        <td align="center">8.7</td>
+      </tr>
+
+      <tr>
+        <td>Властелин колец: Две крепости</td>
+        <td align="center">2002</td>
+        <td>Новая Зеландия</td>
+        <td>Питер Джексон</td>
+        <td>Фэнтези</td>
+        <td align="center">9.0</td>
+      </tr>
+
+      <tr>
+        <td>Форрест Гамп</td>
+        <td align="center">1994</td>
+        <td>США</td>
+        <td>Роберт Земекис</td>
+        <td>Драма</td>
+        <td align="center">9.0</td>
+      </tr>
+
+      <tr>
+        <td>Бойцовский клуб</td>
+        <td align="center">1999</td>
+        <td>США</td>
+        <td>Дэвид Финчер</td>
+        <td>Драма</td>
+        <td align="center">9.0</td>
+      </tr>
+      
+      <tr>
+        <td>Начало</td>
+        <td align="center">2010</td>
+        <td>США</td>
+        <td>Кристофер Нолан</td>
+        <td>Боевик</td>
+        <td align="center">9.0</td>
+      </tr>
+
+      <tr>
+        <td>Звёздные войны. Эпизод V: Империя наносит ответный удар</td>
+        <td align="center">1980</td>
+        <td>США</td>
+        <td>Ирвин Кершнер</td>
+        <td>Фэнтези</td>
+        <td align="center">9.0</td>
+      </tr>
+
+      <tr>
+        <td>Матрица</td>
+        <td align="center">1999</td>
+        <td>США</td>
+        <td>Энди и Ларри Вачовски</td>
+        <td>Научная фантастика</td>
+        <td align="center">8.9</td>
+      </tr>
+
+      <tr>
+        <td>Интерстеллар</td>
+        <td align="center">2014</td>
+        <td>США</td>
+        <td>Кристофер Нолан</td>
+        <td>Научная фантастика</td>
+        <td align="center">8.8</td>
+      </tr>
+
+      <tr>
+        <td>Славные парни</td>
+        <td align="center">1990</td>
+        <td>США</td>
+        <td>Мартин Скорсезе</td>
+        <td>Тру-крайм</td>
+        <td align="center">7.9</td>
+      </tr>
+
+      <tr>
+        <td>Пролетая над гнездом кукушки</td>
+        <td align="center">1975</td>
+        <td>США</td>
+        <td>Милош Форман</td>
+        <td>Драма</td>
+        <td align="center">8.2</td>
+      </tr>
+
+      <tr>
+        <td>Семь</td>
+        <td align="center">1995</td>
+        <td>США</td>
+        <td>Дэфиж Финчер</td>
+        <td>Детектив</td>
+        <td align="center">9.3</td>
+      </tr>
+
+      <tr>
+        <td>Эта замечательная жизнь</td>
+        <td align="center">1946</td>
+        <td>США</td>
+        <td>Фрэнк Капра</td>
+        <td>Романтика</td>
+        <td align="center">9.0</td>
+      </tr>
+
+      <tr>
+        <td>Молчание ягнят</td>
+        <td align="center">1991</td>
+        <td>США</td>
+        <td>Джонатан Демми</td>
+        <td>Триллер</td>
+        <td align="center">8.8</td>
+      </tr>
+
+      <tr>
+        <td>Спасти рядового Райана</td>
+        <td align="center">1998</td>
+        <td>США</td>
+        <td>Стивен Спилберг</td>
+        <td>Военный фильм</td>
+        <td align="center">8.7</td>
+      </tr>
+
+      <tr>
+        <td>Семь самураев</td>
+        <td align="center">1954</td>
+        <td>Япония</td>
+        <td>Акира Куросава</td>
+        <td>Драма</td>
+        <td align="center">8.7</td>
+      </tr>
+
+      <tr>
+        <td>Зелёная миля</td>
+        <td align="center">1999</td>
+        <td>США</td>
+        <td>Фрэнк Дарабонт</td>
+        <td>Драма</td>
+        <td align="center">9.0</td>
+      </tr>
+
+      <tr>
+        <td>Город Бога</td>
+        <td align="center">2002</td>
+        <td>Бразилия</td>
+        <td>Фернанду Мейреллиш</td>
+        <td>Детектив</td>
+        <td align="center">9.0</td>
+      </tr>
+      <tr>
+        <td>Жизнь прекрасна</td>
+        <td align="center">1997</td>
+        <td>Италия</td>
+        <td>Роберто Бениньи</td>
+        <td>Трагикомедия</td>
+        <td align="center">9.0</td>
+      </tr>
+      <tr>
+        <td>Терминатор 2: Судный день</td>
+        <td align="center">1991</td>
+        <td>США</td>
+        <td>Джеймс Кэмерон</td>
+        <td>Боевик</td>
+        <td align="center">9.0</td>
+      </tr>
+      <tr>
+        <td>Назад в будущее</td>
+        <td align="center">1985</td>
+        <td>США</td>
+        <td>Роберт Земекис</td>
+        <td>Комедия</td>
+        <td align="center">9.0</td>
+      </tr>
+
+      <tr>
+        <td>Звёздные войны. Эпизод IV: Новая надежда</td>
+        <td align="center">1977</td>
+        <td>США</td>
+        <td>Джордж Лукас</td>
+        <td>Научная фанатастика</td>
+        <td align="center">8.9</td>
+      </tr>
+
+      <tr>
+        <td>Убить Билла: Кровавое дело целиком</td>
+        <td align="center">2004</td>
+        <td>США</td>
+        <td>Квентин Тарантино</td>
+        <td>Боевик</td>
+        <td align="center">8.8</td>
+      </tr>
+
+      <tr>
+        <td>Унесённые призраками</td>
+        <td align="center">2001</td>
+        <td>Япония</td>
+        <td>Хаяо Миядзаки</td>
+        <td>Аниме</td>
+        <td align="center">7.9</td>
+      </tr>
+
+      <tr>
+        <td>Гладиатор</td>
+        <td align="center">2000</td>
+        <td>Великобритания</td>
+        <td>Ридли Скотт</td>
+        <td>Драма</td>
+        <td align="center">8.2</td>
+      </tr>
+
+      <tr>
+        <td>Пианист</td>
+        <td align="center">2002</td>
+        <td>Франция</td>
+        <td>Роман Полански</td>
+        <td>Байопик</td>
+        <td align="center">9.3</td>
+      </tr>
+
+      <tr>
+        <td>Паразиты</td>
+        <td align="center">2019</td>
+        <td>Южная Корея</td>
+        <td>Пон Джун Хо</td>
+        <td>Триллер</td>
+        <td align="center">9.0</td>
+      </tr>
+
+      <tr>
+        <td>Могила светлячков</td>
+        <td align="center">1988</td>
+        <td>Япония</td>
+        <td>Исао Такахата</td>
+        <td>Аниме</td>
+        <td align="center">8.8</td>
+      </tr>
+
+      <tr>
+        <td>Психо</td>
+        <td align="center">1960</td>
+        <td>США</td>
+        <td>Альфред Хичкок</td>
+        <td>Хоррор</td>
+        <td align="center">8.7</td>
+      </tr>
+
+      <tr>
+        <td>Харакири</td>
+        <td align="center">1962</td>
+        <td>Япония</td>
+        <td>Масаки Кобаяси</td>
+        <td>Драма</td>
+        <td align="center">8.7</td>
+      </tr>
+
+      <tr>
+        <td>Король Лев</td>
+        <td align="center">1994</td>
+        <td>США</td>
+        <td>Роджер Аллерс</td>
+        <td>Приключение</td>
+        <td align="center">9.0</td>
+      </tr>
+
+      <tr>
+        <td>Отступники</td>
+        <td align="center">2006</td>
+        <td>США</td>
+        <td>Мартин Скорсезе</td>
+        <td>Детектив</td>
+        <td align="center">9.0</td>
+      </tr>
+      <tr>
+        <td>Одержимость</td>
+        <td align="center">2014</td>
+        <td>США</td>
+        <td>Дамьен Шазель</td>
+        <td>Драма</td>
+        <td align="center">9.0</td>
+      </tr>
+      <tr>
+        <td>Престиж</td>
+        <td align="center">2006</td>
+        <td>Великобритания</td>
+        <td>Кристофер Нолан</td>
+        <td>Стимпанк</td>
+        <td align="center">9.0</td>
+      </tr>
+
+      <tr>
+        <td>Американская история Икс</td>
+        <td align="center">1998</td>
+        <td>США</td>
+        <td>Тони Кэй</td>
+        <td>Драма</td>
+        <td align="center">9.0</td>
+      </tr>
+
+      <tr>
+        <td>Леон</td>
+        <td align="center">1994</td>
+        <td>Франция</td>
+        <td>Люк Бессон</td>
+        <td>Боевик</td>
+        <td align="center">8.9</td>
+      </tr>
+
+      <tr>
+        <td>Человек-паук: Паутина вселенных</td>
+        <td align="center">2023</td>
+        <td>США</td>
+        <td>Жакин Душ Сантуш</td>
+        <td>Боевик</td>
+        <td align="center">8.8</td>
+      </tr>
+
+      <tr>
+        <td>Новый кинотеатр «Парадизо»</td>
+        <td align="center">1988</td>
+        <td>Италия</td>
+        <td>Джузеппе Торнаторе</td>
+        <td>Романтика</td>
+        <td align="center">7.9</td>
+      </tr>
+
+      <tr>
+        <td>Касабланка</td>
+        <td align="center">1942</td>
+        <td>США</td>
+        <td>Майкл Кёртиц</td>
+        <td>Драма</td>
+        <td align="center">8.2</td>
+      </tr>
+
+      <tr>
+        <td>1+1</td>
+        <td align="center">2011</td>
+        <td>Франция</td>
+        <td>Оливье Накаш</td>
+        <td>Комедия</td>
+        <td align="center">9.3</td>
+      </tr>
+
+      <tr>
+        <td>Подозрительные лица</td>
+        <td align="center">1995</td>
+        <td>США</td>
+        <td>Брайан Сингер</td>
+        <td>Детектив</td>
+        <td align="center">9.0</td>
+      </tr>
+
+      <tr>
+        <td>Джанго освобождённый</td>
+        <td align="center">2012</td>
+        <td>США</td>
+        <td>Квентин Тарантино</td>
+        <td>Вестерн</td>
+        <td align="center">8.8</td>
+      </tr>
+
+      <tr>
+        <td>СЧужой</td>
+        <td align="center">1979</td>
+        <td>США</td>
+        <td>Ридли Скотт</td>
+        <td>Хоррор</td>
+        <td align="center">8.7</td>
+      </tr>
+
+      <tr>
+        <td>Окно во двор</td>
+        <td align="center">1954</td>
+        <td>США</td>
+        <td>Альфред Хичкок</td>
+        <td>Триллер</td>
+        <td align="center">8.7</td>
+      </tr>
+
+      <tr>
+        <td>Новые времена</td>
+        <td align="center">1936</td>
+        <td>США</td>
+        <td>Чарли Чаплин</td>
+        <td>Комедия</td>
+        <td align="center">9.0</td>
+      </tr>
+
+      <tr>
+        <td>Однажды на Диком Западе</td>
+        <td align="center">1968</td>
+        <td>Италия</td>
+        <td>Сердже Леоне</td>
+        <td>Вестерн</td>
+        <td align="center">9.0</td>
+      </tr>
+
+      <tr>
+        <td>Огни большого города</td>
+        <td align="center">1931</td>
+        <td>США</td>
+        <td>Чарли Чаплин</td>
+        <td>Комедия</td>
+        <td align="center">9.0</td>
+      </tr>
+
+      <tr>
+        <td>ВАЛЛ-И</td>
+        <td align="center">2008</td>
+        <td>США</td>
+        <td>Эндрю Стэнтон</td>
+        <td>Антиутопия</td>
+        <td align="center">9.0</td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+
+</html>
