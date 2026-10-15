@@ -30,29 +30,28 @@
 
       <h4>Значение по оси OX</h4>
       <p>
-        <input type="radio" name="type"> Жанр
+        <input type="radio" id="type" name="type"> Жанр
         <br>
 
-        <input type="radio" name="country"> Страна
+        <input type="radio" id="country" name="country"> Страна
         <br>
 
-        <input type="radio" name="year"> Год
+        <input type="radio" id="year" name="year"> Год
       </p>
 
       <h4>Значение по оси OY</h4>
       <p>
-        <input type="checkbox" name="max_rating">Максимальный рейтинг
+        <input type="checkbox" id="max_rating" name="max_rating">Максимальный рейтинг
         <br>
 
-        <input type="checkbox" name="min_rating">Минимальный рейтинг
+        <input type="checkbox" id="min_rating" name="min_rating">Минимальный рейтинг
         <br>
 
-        <input type="checkbox" name="film_count">Количество фильмов
+        <input type="checkbox" id="film_count" name="film_count">Количество фильмов
       </p>
 
-      <p>
-        <input type="submit" value="Построить">
-      </p>
+      <button type="submit" id="graphics_button" name="graphics_button">Построить</button>
+
 
     </form>
 
@@ -66,42 +65,46 @@
 
       <p>
         <label for="filter_name">Название:</label>
-        <input type="text" id="filter_name">
+        <input type="text" id="filter_name" name="filter_name">
       </p>
 
       <p>
         <label for="filter_type">Жанр:</label>
-        <input type="text" id="filter_type">
+        <input type="text" id="filter_type" name="filter_name">
       </p>
 
       <p>
         <label for="filter_country">Страна:</label>
-        <input type="text" id="filter_country">
+        <input type="text" id="filter_country" name="filter_country">
       </p>
 
       <p>
         <label for="filter_city">Город:</label>
-        <input type="text" id="filter_city">
+        <input type="text" id="filter_city" name="filter_city">
       </p>
 
       <p>
         Год: от
-        <input type="number" name="year_from" min="1900" max="2026"> до
-        <input type="number" name="year_to" min="1900" max="2026">
+        <input type="number" id="year_from" min="1900" max="2026" name="year_from"> до
+        <input type="number" id="year_to" min="1900" max="2026" name="year_to">
       </p>
 
       <p>
         Рейтинг: от
-        <input type="number" name="rating_from"> до
-        <input type="number" name="rating_to">
+        <input type="number" id="rating_from" name="rating_from"> до
+        <input type="number" id="rating_to" name="rating_to">
       </p>
 
       <p>
-        <input type="submit" value="Найти">
+        <label for="sort_no_params">Без фильтров?</label>
+        <input type="checkbox" id="sort_no_params" name="sort_no_params" value="yes">
       </p>
+
+      <button type="submit" id="filters_button" name="filters_button">Найти</button>
 
     </form>
   </details>
+
   <details>
     <summary>Сортировка</summary>
 
@@ -109,7 +112,7 @@
 
       <p>
         Первый уровень:
-        <select name="sort_1">
+        <select name="sort_1" id="sort_1">
           <option value="none">Нет</option>
           <option value="name">Название</option>
           <option value="type">Жанр</option>
@@ -118,13 +121,13 @@
           <option value="year">Год</option>
           <option value="rating">Рейтинг</option>
         </select>
-        по убыванию?
-        <input type="checkbox" name="sort_1_desc" value="yes">
+        <label for="sort_1_desc">по убыванию?</label>
+        <input type="checkbox" id="sort_1_desc" name="sort_1_desc" value="yes">
       </p>
 
       <p>
         Второй уровень:
-        <select name="sort_2">
+        <select name="sort_2" id="sort_2">
           <option value="none">Нет</option>
           <option value="name">Название</option>
           <option value="type">Жанр</option>
@@ -133,13 +136,13 @@
           <option value="year">Год</option>
           <option value="rating">Рейтинг</option>
         </select>
-        по убыванию?
-        <input type="checkbox" name="sort_2_desc" value="yes">
+        <label for="sort_2_desc">по убыванию?</label>
+        <input type="checkbox" id="sort_2_desc" name="sort_2_desc" value="yes">
       </p>
 
       <p>
         Третий уровень:
-        <select name="sort_3">
+        <select name="sort_3" id="sort_3">
           <option value="none">Нет</option>
           <option value="name">Название</option>
           <option value="type">Жанр</option>
@@ -148,13 +151,11 @@
           <option value="year">Год</option>
           <option value="rating">Рейтинг</option>
         </select>
-        по убыванию?
-        <input type="checkbox" name="sort_3_desc" value="yes">
+        <label for="sort_3_desc">по убыванию?</label>
+        <input type="checkbox" id="sort_3_desc" name="sort_3_desc" value="yes">
       </p>
 
-      <p>
-        <input type="submit" value="Сортировать">
-      </p>
+      <button type="submit" id="sort_button" name="sort_button">Сортировать</button>
 
     </form>
   </details>
